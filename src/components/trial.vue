@@ -1,8 +1,8 @@
 <script setup>
-  var tryonPayload = {
-      product_id: 'SM21-SH-M02-RD-S-001', // Must required
+   var tryonPayload = {
+      product_id: YOUR_PRODUCT_SKU, // Must required
       product_category: "NECK",
-      neck_wearing: '../assets/images/1.png', // The image should be a transparent png
+      neck_wearing: NECKLACE_URL, // The image should be a transparent png
       x_neck: null, // Horizontal Offset (optional)
       y_neck: null, // Vertical Offset (optional)
       ppu_neck: null, // On increasing the ppu value the tryon image gets smaller (optional)
@@ -10,9 +10,9 @@
 
     $(document).ready(function () {
       var options = {
-          key: "2rFXetD2QxDEGWBJtFyxOwHOYjfZuo36vtsAvuZA",
-          //ExID: "VTO",
-          brandLogo: BRAND_LOGO_URL
+            "key": "2rFXetD2QxDEGWBJtFyxOwHOYjfZuo36vtsAvuZA",
+            //"ExID": "Parent_Container_ID", // Optional
+            "brandLogo": "Watermark_URL" // Optional
       };
       init(options);
       start();
