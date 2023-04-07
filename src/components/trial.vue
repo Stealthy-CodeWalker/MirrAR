@@ -8,8 +8,8 @@
       ppu_neck: null, // On increasing the ppu value the tryon image gets smaller (optional)
     };
 
-    $(document).ready(function () {
-      var options = {
+    var a=(document).ready(function () {
+      const options = {
             "key": "2rFXetD2QxDEGWBJtFyxOwHOYjfZuo36vtsAvuZA",
             //"ExID": "Parent_Container_ID", // Optional
             "brandLogo": "Watermark_URL" // Optional
@@ -17,13 +17,15 @@
       init(options);
       start();
     });
-    document.addEventListener("init", function () {
+    var b=document.addEventListener("init", function () {
       filterAddRemove("add", tryonPayload);
     });
 </script>
 
 <template>
   <div>
+    {{ a }}
+    {{ b }}
     {{ tryonPayload }}
   </div>
 </template>
