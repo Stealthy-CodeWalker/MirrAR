@@ -5,6 +5,10 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + Vue</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.mirrar.in/v4.0.8/js/init.min.js"></script>
   </head>
   <body>
     <div id="app"></div>
@@ -42,9 +46,35 @@
     }
 
   </style>
-  <div id="VTO">
-    <script type="module" src="./src/main.js"></script>
-  </div>
+  <body>
+    <div id="VTO"></div>
+</body>
+<script>
+
+  // Replace this tryon payload depending on the category of your product
+  var tryonPayload = {
+    product_id: "SM21-SH-M02-RD-S-001", // Must required
+    product_category: "NECK",
+    neck_wearing: "https://www.dropbox.com/s/dv4z4ldgx2lh6ff/1.png?dl=0", // The image should be a transparent png
+    x_neck: null, // Horizontal Offset (optional)
+    y_neck: null, // Vertical Offset (optional)
+    ppu_neck: null, // On increasing the ppu value the tryon image gets smaller (optional)
+  };
+
+  $(document).ready(function () {
+    var options = {
+      "key": "2rFXetD2QxDEGWBJtFyxOwHOYjfZuo36vtsAvuZA",
+      //"ExID": "Parent_Container_ID", // Optional
+      "brandLogo": "Watermark_URL" // Optional
+    };
+    init(options);
+    start();
+  });
+  document.addEventListener("init", function () {
+    filterAddRemove("add", tryonPayload);
+  });
+
+</script>
     
   </body>
 </html>

@@ -5,6 +5,6 @@ import sdk from "./components/sdk.vue";
 
 <template>
     <!-- <sdk/> -->
-    <trial/>
+    <!-- <trial/> -->
 </template>
 
