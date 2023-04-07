@@ -4,7 +4,7 @@ import sdk from "./components/sdk.vue";
 </script>
 
 <template>
-    <sdk/>
+    <!-- <sdk/> -->
     <trial/>
 </template>
 
