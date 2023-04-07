@@ -11,7 +11,7 @@
     $(document).ready(function () {
       var options = {
           key: "2rFXetD2QxDEGWBJtFyxOwHOYjfZuo36vtsAvuZA",
-          ExID: "VTO",
+          //ExID: "VTO",
           brandLogo: BRAND_LOGO_URL
       };
       init(options);
