@@ -24,8 +24,6 @@
 
 <template>
   <div>
-    {{ a }}
-    {{ b }}
     {{ tryonPayload }}
   </div>
 </template>
