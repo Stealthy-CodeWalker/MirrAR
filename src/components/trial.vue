@@ -12,7 +12,7 @@
     var options = {
       "key": "2rFXetD2QxDEGWBJtFyxOwHOYjfZuo36vtsAvuZA",
       //"ExID": "Parent_Container_ID", // Optional
-      "brandLogo": "Watermark_URL" // Optional
+      // "brandLogo": "Watermark_URL" // Optional
     };
     init(options);
     start();
