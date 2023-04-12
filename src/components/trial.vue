@@ -23,9 +23,9 @@
 </script>
 
 <template>
-  <div>
+  <!-- <div>
     {{ tryonPayload }}
-  </div>
+  </div> -->
 </template>
 
 
